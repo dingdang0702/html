@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UL列表</title>
+	<style type="text/css">
+	/*ul无序列表中的列表项前的样式（实心黑色圆点）取消*/
+	ul{ list-style: none; }
+	/*li列表项左浮动，所有列表项能在一行内显示的都显示在一行内*/
+	ul li{ float: left; }
+	/*
+	.clear 凡是页面中class属性值是clear的元素都引用这个样式设置
+	 clear: both; 清除浮动
+	*/
+	.clear{ clear: both; }
+	</style>
+</head>
+<body>
+<p>ul无序列表，每个li是一个列表项</p>
+	<ul>
+		<li>面向对象基础</li>
+		<li>CMS快速建站</li>
+		<li>WEB应用界面特效2</li>
+	</ul>
+	<div class="clear"></div>
+	<ol>
+		<li>html</li>
+		<li>css</li>
+		<li>javascript</li>
+	</ol>
+</body>
+</html>

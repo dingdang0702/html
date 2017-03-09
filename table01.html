@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table表格</title>
+	<style type="text/css">
+	td,th{ background: #FFFFFF;}/*td th 定义的单元格背景颜色都设置为白色*/
+	</style>
+</head>
+<body>
+<!--表格边框原理：
+表格的背景颜色从格和格中间的间隙中透出来形成边框
+单元格的背景颜色盖住表格本身的背景颜色，只有格和格中间的间隙没有盖住形成边框
+-->
+	<table bgcolor="black" cellpadding="10" cellspacing="1">
+		<tr>
+			<th colspan="8" height="50">考勤表</th>
+		</tr>
+		<tr>
+			<th rowspan="3">序号</th>
+			<th rowspan="3">学号</th>
+			<th rowspan="3">姓名</th>
+			<th rowspan="3">性别</th>
+			<th>节次</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<th>日期</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<th>星期</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>141324111</td>
+			<td>岳小东</td>
+			<td>男</td>
+			<td>√</td>
+			<td>√</td>
+			<td>√</td>
+			<td>√</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>141324111</td>
+			<td>孔彦泽</td>
+			<td>男</td>
+			<td>√</td>
+			<td>√</td>
+			<td>√</td>
+			<td>√</td>
+		</tr>
+		<tr>
+		<!--
+		colspan="3" 列合并（3列合并为1列）
+		rowspan="3" 行合并（3行合并为1行）
+		-->
+			<td colspan="3" rowspan="3" align="center">统计</td>
+			<td>实到</td>
+			<td>44</td>
+			<td>44</td>
+			<td>44</td>
+			<td>44</td>
+		</tr>
+		<tr>
+			<td>旷课</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>请假</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>
+</body>
+</html>

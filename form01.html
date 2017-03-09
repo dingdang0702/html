@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form表单</title>
+</head>
+<body>
+<h1>用户登录</h1>
+	<form name="login" method="get" action="submit.html">
+		<input type="text" name="uname" placeholder="账号/手机号码/邮箱" /><br/>
+		<input type="password" name="pass" placeholder="密码" /><br/>
+		<input type="submit" value="登录" />
+	</form>
+	<!--
+	form标签的属性
+		method 定义表单提交方式，get：明文传输（表单内容显示在链接上），post：隐文传输
+		action 定义表单的提交方向
+	input的属性
+		type 定义输入控件的类型，text:文本框，password:密码框，submit:提交按钮
+		placeholder 定义输入控件默认显示的提示内容提交
+		按钮默认显示“提交”，可通过value属性设置按钮内容-->
+</body>
+</html>

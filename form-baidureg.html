@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿百度注册</title>
+	<style type="text/css">
+	span{ 
+		display: inline-block;/*内联元素span要设置宽高，必须要改变disply属性，inline-block内联块级元素（可以设置宽高）*/
+		width: 50px;
+		text-align: right;/*设置span内文本的对齐方式，right是右对齐*/
+	}
+	/*.sub 代表html中class属性等于sub的元素都引用此样式*/
+	.sub{
+		width: 210px;
+		height: 32px;
+		background: #3F89EC;/*按钮的背景颜色*/
+		color: #FFF;/*按钮的文字颜色*/
+	}
+	</style>
+</head>
+<body>
+<h1>注册百度账号</h1>
+	<form name="login" method="get" action="submit.html">
+		<p>
+			<span>用户名</span>
+			<input type="text" name="uname" placeholder="请设置用户名" />
+		</p>
+		<p>
+			<span>密码</span>
+			<input type="password" name="pass" placeholder="请设置登录密码" />
+		</p>
+		<p>
+		<input class="sub" type="submit" value="登录" />
+		</p>
+	</form>
+</body>
+</html>

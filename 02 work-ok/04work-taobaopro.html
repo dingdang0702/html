@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿淘宝产品列表</title>
+	<style type="text/css">
+	*{ margin: 0 auto; padding: 0; }
+	/*ul无序列表中的列表项前的样式（实心黑色圆点）取消*/
+	ul{ list-style: none; }
+	/*li列表项左浮动，所有列表项能在一行内显示的都显示在一行内*/
+	ul li{
+		float: left;/*列表项浮动*/
+		width: 224px;
+		height: 304px;/*列表项高度*/
+		background: #F5F5F5;/*列表项背景颜色*/
+		margin:10px 10px;/*列表项外间距 默认顺序：上下、左右*/
+	}
+	div{ width: 224px; height: 220px; overflow: hidden; }
+	p{ color: #6C6C6C; font-size: 12px; line-height: 18px; padding: 3px 10px; }
+	.RMB{ color: #FD6D38; font-size: 16px; line-height: 32px; }
+	.xl{ color: #9CA0AA; font-size: 12px; line-height: 32px; float: right; }
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<div><img src="04-1.jpg" alt="" width="100%" /></div>
+			<p>【IKEA宜家代购店】海尔默抽屉柜 带脚轮（多色）</p>
+			<p>
+				<span class="RMB">¥199</span>
+				<span class="xl">销量:10</span>
+			</p>
+		</li>
+		<li>
+			<div><img src="04-2.jpg" alt="" width="100%" /></div>
+			<p>【IKEA宜家代购店】海尔默抽屉柜 带脚轮（多色）</p>
+			<p>
+				<span class="RMB">¥199</span>
+				<span class="xl">销量:10</span>
+			</p>
+		</li>
+		<li>
+			<div><img src="04-3.jpg" alt="" width="100%" /></div>
+			<p>【IKEA宜家代购店】海尔默抽屉柜 带脚轮（多色）</p>
+			<p>
+				<span class="RMB">¥199</span>
+				<span class="xl">销量:10</span>
+			</p>
+		</li>
+	</ul>
+</body>
+</html>
